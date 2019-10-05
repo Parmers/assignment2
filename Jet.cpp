@@ -33,9 +33,8 @@ int Jet::getNumberOfEngines() {
     return numberOfEngines;
 }
 
-
 Jet::~Jet() = default;
 
 string Jet::toString() {
-    return "-> Jet\n" + PoweredVehicle::toString() + "\n\tEngine Size: " + to_string(numberOfEngines);
+    return "-> Jet\n" + PoweredVehicle::toString() + "\n\engines: " + to_string(numberOfEngines);
 }
