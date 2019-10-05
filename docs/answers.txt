@@ -71,6 +71,6 @@ J.
 The Dictator and Lieutenants model is better for a 100 person team because at that scale we need more than 1 person reviewing the code for merging and resolving conflicts before committing.
 
 
-
+5A: The driving simulator uses both polymorphism and encapsulation. The vehicle classes exemplify polymorphism because car and bicycle are both vehicles but are interpreted differently based on their characteristics. All the vehicles have member functions that work on their private data, hence our program also has encapsulation.
 
  
