@@ -12,7 +12,7 @@ Skateboard::Skateboard(string brand, string model) {
 
 Skateboard::~Skateboard() = default;
 
-double Skateboard::mileageEstimate(double time) {
+double Skateboard::mileageEstimate(double mileage) {
     double mileage = rand() % 5;
     mileage /= 10;
     if ((time/60) > 25 && (time/60) < 250)
