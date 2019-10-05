@@ -17,7 +17,7 @@ double Skateboard::mileageEstimate(double mileage) {
     mileage /= 10;
     if ((time/60) > 25 && (time/60) < 250)
     {
-        // if time is more than 25 minutes and less than 250 minutes, add random miliage 
+        // if time is more than 25 minutes and less than 250 minutes, add random mileage 
         double random = rand() % 1 + (time/3); 
         mileage += random;
     } 
