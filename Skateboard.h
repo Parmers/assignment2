@@ -15,7 +15,7 @@ public:
 
     explicit Skateboard(string brand, string model);
     virtual ~Skateboard();
-    virtual double mileageCalc(double time);
+    virtual double mileageEstimate(double time);
     virtual string toString();
 };
 
