@@ -1,0 +1,76 @@
+A.
+
+(base) wc-dhcp9d188:assignment2 samuelparmer$ git commit -m "Added docs folder"
+[master bcd642b] Added docs folder
+ Committer: Samuel Parmer <samuelparmer@wc-dhcp9d188.employee-secure.wireless.fsu.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+)
+ create mode 100644 docs/status.txt
+(base) wc-dhcp9d188:assignment2 samuelparmer$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 473 bytes | 473.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Parmers/assignment2.git
+   3635edd..bcd642b  master -> master
+
+B. 
+
+10 commits, git rev-list --count HEAD
+
+C.
+
+Wed Sep 25 18:13:30 2019 -0400, git log --follow .gitignore
+
+D.
+
+1) Branches allows us to have multiple copies of the repository so people can safely work on different aspects of the project.
+2) Branches are merged into the master which should be guaranteed to always have working production code.
+
+E.
+
+"git log" gives you the commit history. "git status" prints a list of modified files that have yet to be committed.
+
+
+F.
+
+git log --follow Vehicle.h
+
+
+G.
+
+git log --grep="file"
+
+H.
+
+Inheritance allows subclasses to inherit properties such as variables and functions from their superclass.
+
+Polymorphism allows us to use an object differently depending on its class structure. For instance, if we have a Person class with subclass Student, we can declare a Person as: Person p = new Student();
+
+Encapsulation: Bundling data with functions that modify that data. All the data associated with an object is hidden in the object and access is restricted to member functions.
+
+I.
+
+The main difference is how many steps there are between the developers and the blessed repository. In the centralized integration workflow, the developers code goes directly to the integration manager who pushes to the blessed repository. In the Dictator and Lieutenants workflow, the developer's code goes through an extra their of lieutenants who merge select parts of code.
+
+J.
+
+The Dictator and Lieutenants model is better for a 100 person team because at that scale we need more than 1 person reviewing the code for merging and resolving conflicts before committing.
+
+
+5A: The driving simulator uses both polymorphism and encapsulation. The vehicle classes exemplify polymorphism because car and bicycle are both vehicles but are interpreted differently based on their characteristics. All the vehicles have member functions that work on their private data, hence our program also has encapsulation.
+
+ 
